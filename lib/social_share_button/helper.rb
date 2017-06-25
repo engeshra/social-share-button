@@ -20,6 +20,8 @@ module SocialShareButton
           klass = "ko-envelope-o knowledge-icon icon-large"
         elsif name == 'linkedin'
           klass = "fa fa-linkedin knowledge-icon icon-large"
+        elsif name == 'facebook'
+          klass = "fa fa-facebook knowledge-icon icon-large"
         end
         link_title = t "social_share_button.share_to", :name => t("social_share_button.#{name.downcase}")
         html << link_to("", "#", { :rel => ["nofollow", rel],
